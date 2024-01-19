@@ -1,0 +1,85 @@
+.ebrima-bold {
+    font-family: 'Ebrima Bold', sans-serif;
+}
+
+.ebrima-regular {
+    font-family: 'Ebrima', sans-serif;
+}
+
+.square-border-company {
+    background-color:#EBFCF0;
+}
+
+.square-border-presta {
+    background-color:#E5E5E5;
+}
+
+.text-color-green {
+    color:#44D62C;
+}
+
+.background-color-green {
+    background-color:#44D62C;
+    color:white;
+}
+
+.background-color-green:hover {
+    background-color: white;
+    color: #44D62C;
+    border-color: #44D62C;
+  }
+
+  .background-color-black {
+    background-color:black;
+    color:white;
+}
+
+  .background-color-black:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+  }
+
+main {
+    min-height: 100vh;
+}
+
+form {
+    margin:auto;
+    max-width: 500px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+
+input, textarea {
+    border-radius: 10px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input, textarea, label {
+    font-family: 'Ebrima', sans-serif;
+}
+
+input[type="submit"] {
+    width: max-content;
+}
+
+.mb-lg {
+    padding-bottom: 200px!important;
+}
+
+.mt-xl {
+    padding-top: 350px!important;
+}
+
+.mb-xl {
+    padding-bottom: 350px!important;
+}
+
+.icon {
+    width: 40px;
+}

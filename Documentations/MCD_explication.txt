@@ -1,0 +1,33 @@
+Table Utilisateurs:
+
+Cette table stocke les informations générales sur les utilisateurs, qu'ils soient des entreprises ou des prestataires.
+Les utilisateurs sont identifiés de manière unique par leur ID.
+La colonne TypeUtilisateur peut être utilisée pour distinguer entre les entreprises et les prestataires.
+
+
+Table Profils:
+
+Cette table est liée à la table Utilisateurs par la colonne Utilisateur_ID.
+Elle stocke des détails spécifiques aux compétences, à l'expérience et aux secteurs d'expertise des utilisateurs.
+
+
+Table Offres:
+
+Cette table stocke les offres publiées par les entreprises.
+Chaque offre est liée à une entreprise spécifique (via Entreprise_ID) et a un identifiant unique (ID).
+La colonne Rémunération stocke le montant proposé pour la mission.
+
+
+Table Correspondances:
+
+Cette table enregistre les correspondances entre les prestataires et les offres auxquelles ils ont montré de l'intérêt.
+Elle est liée aux tables Utilisateurs (Prestataire_ID) et Offres (Offre_ID).
+ÉtatCorrespondance peut indiquer si la correspondance est en attente, acceptée ou refusée.
+
+
+Table Contrats:
+
+Cette table stocke les détails des contrats conclus entre les entreprises et les prestataires.
+Elle est liée à la table Correspondances (Correspondance_ID).
+La colonne StatutContrat peut indiquer si le contrat est en cours, terminé ou annulé.
+DateDébut et DateFin indiquent les périodes de début et de fin du contrat.
